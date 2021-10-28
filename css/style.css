@@ -1,0 +1,54 @@
+/*globals*/
+.font-os{
+	font-family: 'Open Sans', sans-serif;
+}
+.font-rb{
+	font-family: 'Roboto Slab', serif;
+}
+.font-size-13{
+	font-size: 13px;
+}
+.font-size-16{
+	font-size: 16px;
+}
+.bg-orange{
+	background: #e36e00;
+}
+.text-black{
+	color: #000;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+/*top navbar section*/
+#top-navbar{
+	border-bottom: 2px solid #e35300;
+}
+#top-navbar input{
+	border-radius: 20px 0 0 20px;
+	border: 1px solid #e35300;
+}
+#top-navbar .input-group-text{
+	border-radius: 0 20px 20px 0;
+	border: 1px solid #e35300;
+}
+
+#top-navbar .fa-times,
+#top-navbar .fa-bars{
+	cursor: pointer;
+	display: none;
+}
+
+/*#sidebar-slider section*/
+#sidebar-slider .menu .nav-link:hover{
+	color: #ff9c2a;
+}
+.logo{
+	float: left;
+	margin: 0;
+}
+
+
