@@ -11,6 +11,9 @@
 .font-size-16{
 	font-size: 16px;
 }
+.font-size-15{
+	font-size: 15px;
+}
 .bg-orange{
 	background: #e36e00;
 }
@@ -83,4 +86,3 @@ body{
 .overlay .far:hover{
 	color: #e35300;
 }
-
