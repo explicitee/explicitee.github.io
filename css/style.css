@@ -50,5 +50,37 @@ body{
 	float: left;
 	margin: 0;
 }
-
+.overlay{
+	display: block;
+	position: absolute;
+	top: 5%;
+	width: 70px;
+	margin-left: 0;
+	opacity: 0;
+}
+.overlay .fa,
+.overlay .far{
+	cursor: pointer;
+	background: #fff;
+	color: #000;
+	width: 35px;
+	height: 35px;
+	line-height: 35px;
+	font-size: 20px;
+	margin-bottom: 5%;
+}
+.overlay .btn-secondary{
+	background: none;
+	border: none;
+	box-shadow: none;
+}
+.prd-top:hover .overlay{
+	opacity: 1;
+	margin-left: 10px;
+	transition: .5s;
+}
+.overlay .fa:hover,
+.overlay .far:hover{
+	color: #e35300;
+}
 
