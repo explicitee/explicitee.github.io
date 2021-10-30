@@ -86,3 +86,6 @@ body{
 .overlay .far:hover{
 	color: #e35300;
 }
+
+.show-cart li {
+  display: flex;

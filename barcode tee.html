@@ -36,11 +36,36 @@
                     <div class="d-flex">
                         <a href="index.html" class="btn font-os font-size-13 bg-white text-black flex-fill mx-1"><i class="fas fa-home mr-2"></i>Home</a>
                         <a href="#" class="btn font-os font-size-13 bg-white text-black flex-fill mx-1"><i class="mr-2"></i>About</a>
-                         <a href="#" class="btn font-os font-size-13 bg-white text-black flex-fill mx-1"><i class="fas fa-shopping-cart mr-2"></i>Cart</a>
+                          <a href="#" class="btn font-os font-size-13 bg-white text-black flex-fill mx-1" data-toggle="modal" data-target="#cart"><i class="fas fa-shopping-cart mr-2"></i>Cart(<span class="total-count"></span>)</a>
                     </div>
                 </div>
             </div>
         </section>
+<!-- Modal start-->
+<div class="modal fade" id="cart" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cart</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <table class="show-cart table">
+          
+        </table>
+        <div>Total price: MMK<span class="total-cart"></span></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Order now</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<!-- Model end -->
 
 <!-- top navbar section end -->
 
@@ -89,9 +114,10 @@
                     <p class="text-white font-size-15"><b>Available sizes : </b>M , L , XL</p>
                     <p class="text-white font-size-15"><b>Color : </b>Black & White</p>
                     <p class="text-white font-size-15"><b>Condition : </b>New</p>
-                    <label class="text-white font-size-15">Quantity</label>
-                    <input type="number" value="1" min="1">
-                    <button class="btn bg-white text-black"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+                    
+                    <button class="add-to-cart btn bg-white text-black" data-name="BarcodeTee" data-price="8000"><i class="fas fa-shopping-cart"></i>Add to Cart</button>
+
+                    
                 </div>
             </div>
         </div>
@@ -118,5 +144,6 @@
     <script src="library/bootstrap/popper.min.js"></script>
     <script src="library/bootstrap/bootstrap.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/addtocart.js"></script>
 </body>
 </html>
