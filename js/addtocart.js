@@ -155,9 +155,20 @@ $('.clear-cart').click(function() {
 });
 
 
+
+
+// Delete item button
+
+$('.show-cart').on("click", ".delete-item", function(event) {
+  var name = $(this).data('name')
+  shoppingCart.removeItemFromCartAll(name);
+  displayCart();
+})
+
 function displayCart() {
   var cartArray = shoppingCart.listCart();
   var output = "";
+  var output1 = "";
   for(var i in cartArray) {
     output += "<tr>"
       + "<td>" + cartArray[i].name + "</td>" 
@@ -169,19 +180,23 @@ function displayCart() {
       + " = " 
       + "<td>" + cartArray[i].total + "</td>" 
       +  "</tr>";
-  }
+      
+     output1 += "<tr>"
+      + "<td>" + cartArray[i].name + "</td>" 
+      + "<td>(" + cartArray[i].price + ")</td>"
+      + "<td>x</td>"
+      + "<td>" +cartArray[i].count + "</td>"
+      + "<td>" + "=" + "</td>"
+      + "<td>" + cartArray[i].total + "</td>" 
+      +  "</tr>";
+
+}
+
   $('.show-cart').html(output);
+  $('.show-cart1').html(output1);
   $('.total-cart').html(shoppingCart.totalCart());
   $('.total-count').html(shoppingCart.totalCount());
 }
-
-// Delete item button
-
-$('.show-cart').on("click", ".delete-item", function(event) {
-  var name = $(this).data('name')
-  shoppingCart.removeItemFromCartAll(name);
-  displayCart();
-})
 
 
 // -1
