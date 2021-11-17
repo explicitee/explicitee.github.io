@@ -81,7 +81,7 @@ body{
 .prd-top:hover .overlay{
 	opacity: 1;
 	margin-left: 10px;
-	transition: .5s;
+	transition: .3s;
 }
 .overlay .fa:hover,
 .overlay .far:hover{
